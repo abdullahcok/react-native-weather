@@ -22,7 +22,7 @@ const Weather = () => {
       setLoading(true);
 
       const response = await axios.get(
-        `https://api.openweathermap.org/data/2.5/weather?q=${encodeURIComponent(city)}&appid=26d244327e5c3010cad4fd2225c13e77`
+        `https://api.openweathermap.org/data/2.5/weather?q=${encodeURIComponent(city)}&appid=(your-api)`
       );
 
       const temperatureInCelsius = kelvinToCelsius(response.data.main.temp);
